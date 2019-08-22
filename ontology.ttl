@@ -35,7 +35,7 @@ cot:AirQuality
         a                     sosa:FeatureOfInterest ;
         skos:exactMatch       m3-lite:AirQuality ;
         rdfs:label            "Air Quality"@en ;
-        rdfs:comments         "The degree to which the air in a particular place is pollution-free."@en ;
+        rdfs:comment          "The degree to which the air in a particular place is pollution-free."@en ;
         prov:wasInfluencedBy  <https://www.lexico.com/en/definition/air_quality> ;
         rdfs:isDefinedBy      cot: .
 
@@ -43,7 +43,7 @@ cot:Weather
         a                     sosa:FeatureOfInterest ;
         skos:exactMatch       m3-lite:Weather ;
         rdfs:label            "Weather"@en ;
-        rdfs:comments         "The state of the atmosphere at a particular place and time as regards heat, cloudiness, dryness, sunshine, wind, rain, etc."@en ;
+        rdfs:comment          "The state of the atmosphere at a particular place and time as regards heat, cloudiness, dryness, sunshine, wind, rain, etc."@en ;
         prov:wasInfluencedBy  <https://www.lexico.com/en/definition/weather> ;
         rdfs:isDefinedBy      cot: .
 
@@ -51,7 +51,7 @@ cot:SolarRadiation
         a                     sosa:FeatureOfInterest ;
         skos:exactMatch       m3-lite:SolarRadiation ;
         rdfs:label            "Solar Radiation"@en ;
-        rdfs:comments         "Radiant energy emitted by the sun from a nuclear fusion reaction that creates electromagnetic energy."@en ;
+        rdfs:comment          "Radiant energy emitted by the sun from a nuclear fusion reaction that creates electromagnetic energy."@en ;
         prov:wasInfluencedBy  <https://www.ambientweather.com/solarradiation.html> ;
         rdfs:isDefinedBy      cot: .
 
@@ -59,66 +59,105 @@ cot:SolarRadiation
 # observable properties
 
 cot:NO 
-        a                   sosa:ObservableProperty ;
-        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationNO ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:exactMatch       m3-lite:ChemicalAgentAtmosphericConcentrationNO ;
+        rdfs:label            "NO"@en ;
+        rdfs:comment          "A colourless toxic gas formed in many reactions in which nitric acid is reduced. It reacts immediately with oxygen to form nitrogen dioxide."@en ;
+        prov:wasInfluencedBy  <https://www.lexico.com/en/definition/nitrogen_monoxide> ;
+        rdfs:isDefinedBy      cot: .
 
 cot:NO2 
-        a                   sosa:ObservableProperty ;
-        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationNO2 ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:exactMatch       m3-lite:ChemicalAgentAtmosphericConcentrationNO2 ;
+        rdfs:label            "NO2"@en ;
+        rdfs:comment          "A reddish-brown poisonous gas occurring commonly as an air pollutant, formed by the oxidation of nitric oxide or by combustion in the presence of air. Below 21°C nitrogen dioxide is a yellowish-brown liquid."@en ;
+        prov:wasInfluencedBy  <https://www.lexico.com/en/definition/nitrogen_dioxide> ;
+        rdfs:isDefinedBy      cot: .
 
 cot:O3 
-        a                   sosa:ObservableProperty ;
-        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationO3 ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:exactMatch       m3-lite:ChemicalAgentAtmosphericConcentrationO3 ;
+        rdfs:label            "O3"@en ;
+        rdfs:comment          "A colourless unstable toxic gas with a pungent odour and powerful oxidizing properties, formed from oxygen by electrical discharges or ultraviolet light. It differs from normal oxygen (O₂) in having three atoms in its molecule (O₃)."@en ;
+        prov:wasInfluencedBy  <https://www.lexico.com/en/definition/ozone> ;
+        rdfs:isDefinedBy      cot: .
 
 cot:PM10 
-        a                   sosa:ObservableProperty ;
-        skos:narrowMatch    m3-lite:ChemicalAgentAtmosphericConcentrationDust ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:narrowMatch      m3-lite:ChemicalAgentAtmosphericConcentrationDust ;
+        rdfs:label            "PM10"@en ;
+        rdfs:comment          "An air pollutant consisting of small particles with an aerodynamic diameter less than or equal to a nominal 10 micrometer. Their small size allows them to make their way to the air passages deep within the lungs where they may be deposited and result in adverse health effects. PM10 also causes visibility reduction."@en ;
+        prov:wasInfluencedBy  <https://www.eea.europa.eu/themes/air/air-quality/resources/glossary/pm10> ;
+        rdfs:isDefinedBy      cot: .
 
 cot:PM1
-        a                   sosa:ObservableProperty ;
-        skos:narrowMatch    m3-lite:ChemicalAgentAtmosphericConcentrationDust ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:narrowMatch      m3-lite:ChemicalAgentAtmosphericConcentrationDust ;
+        rdfs:label            "PM1"@en ;
+        rdfs:comment          "An air pollutant consisting of small particles with an aerodynamic diameter less than or equal to a nominal 1 micrometer. Their small size allows them to make their way to the air passages deep within the lungs where they may be deposited and result in adverse health effects."@en ;
+        prov:wasInfluencedBy  <https://www.eea.europa.eu/themes/air/air-quality/resources/glossary/pm10> ;
+        rdfs:isDefinedBy      cot: .
 
 cot:PM25 
-        a                   sosa:ObservableProperty ;
-        skos:narrowMatch    m3-lite:ChemicalAgentAtmosphericConcentrationDust ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:narrowMatch      m3-lite:ChemicalAgentAtmosphericConcentrationDust ;
+        rdfs:label            "PM2.5"@en ;
+        rdfs:comment          "An air pollutant consisting of small particles with an aerodynamic diameter less than or equal to a nominal 2.5 micrometer. Their small size allows them to make their way to the air passages deep within the lungs where they may be deposited and result in adverse health effects."@en ;
+        prov:wasInfluencedBy  <https://www.eea.europa.eu/themes/air/air-quality/resources/glossary/pm10> ;
+        rdfs:isDefinedBy      cot: .
 
 cot:VOC 
-        a                   sosa:ObservableProperty ;
-        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationVOC ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:exactMatch       m3-lite:ChemicalAgentAtmosphericConcentrationVOC ;
+        rdfs:label            "VOC"@en ;
+        rdfs:comment          "Volatile organic compounds (VOCs) are organic chemicals that have a high vapor pressure at ordinary room temperature."@en ;
+        prov:wasInfluencedBy  <https://en.wikipedia.org/wiki/Volatile_organic_compound> ;
+        rdfs:isDefinedBy      cot: .
 
 cot:NH3 
-        a                   sosa:ObservableProperty ;
-        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationNH3 ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:exactMatch       m3-lite:ChemicalAgentAtmosphericConcentrationNH3 ;
+        rdfs:label            "NH3"@en ;
+        rdfs:comment          "A colourless gas with a characteristic pungent smell, which dissolves in water to give a strongly alkaline solution."@en ;
+        prov:wasInfluencedBy  <https://www.lexico.com/en/definition/ammonia> ;
+        rdfs:isDefinedBy      cot: .
 
 cot:CO 
-        a                   sosa:ObservableProperty ;
-        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationCO ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:exactMatch       m3-lite:ChemicalAgentAtmosphericConcentrationCO ;
+        rdfs:label            "CO"@en ;
+        rdfs:comment          "A colourless, odourless toxic flammable gas formed by incomplete combustion of carbon."@en ;
+        prov:wasInfluencedBy  <https://www.lexico.com/en/definition/carbon_monoxide> ;
+        rdfs:isDefinedBy      cot: .
 
 cot:SO2
-        a                   sosa:ObservableProperty ;
-        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationSO2 ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:exactMatch       m3-lite:ChemicalAgentAtmosphericConcentrationSO2 ;
+        rdfs:label            "SO2"@en ;
+        rdfs:comment          "A colourless pungent toxic gas formed by burning sulphur in air."@en ;
+        prov:wasInfluencedBy  <https://www.lexico.com/en/definition/sulphur_dioxide> ;
+        rdfs:isDefinedBy      cot: .
 
 cot:Light
-        a                   sosa:ObservableProperty ;
-        skos:relatedMatch   m3-lite:Illuminance ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:relatedMatch     m3-lite:Illuminance ;
+        rdfs:label            "Light"@en ;
+        rdfs:comment          "The natural agent that stimulates sight and makes things visible."@en ;
+        prov:wasInfluencedBy  <https://www.lexico.com/en/definition/light> ;
+        rdfs:isDefinedBy      cot: .
 
 cot:RelativeHumidity
-        a                   sosa:ObservableProperty ;
-        skos:exactMatch     m3-lite:RelativeHumidity ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:exactMatch       m3-lite:RelativeHumidity ;
+        rdfs:label            "Relative Humidity"@en ;
+        rdfs:comment          "The amount of water vapour present in air expressed as a percentage of the amount needed for saturation at the same temperature."@en ;
+        prov:wasInfluencedBy  <https://www.lexico.com/en/definition/relative_humidity> ;
+        rdfs:isDefinedBy      cot: .
 
 cot:Temperature
-        a                   sosa:ObservableProperty ;
-        skos:exactMatch     m3-lite:Temperature ;
-        rdfs:isDefinedBy    cot: .
+        a                     sosa:ObservableProperty ;
+        skos:exactMatch       m3-lite:Temperature ;
+        rdfs:label            "Temperature"@en ;
+        rdfs:comment          "The degree or intensity of heat present in a substance or object, especially as expressed according to a comparative scale and shown by a thermometer or perceived by touch."@en ;
+        prov:wasInfluencedBy  <https://www.lexico.com/en/definition/temperature> ;
+        rdfs:isDefinedBy      cot: .
