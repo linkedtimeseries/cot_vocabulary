@@ -1,0 +1,124 @@
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:       <http://purl.org/dc/terms/> .
+@prefix vann:      <http://purl.org/vocab/vann/> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix sosa:      <http://www.w3.org/ns/sosa/> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix m3-lite:   <http://purl.org/iot/vocab/m3-lite#> .
+@prefix cot:       <https://w3id.org/city_of_things#> .
+@prefix prov:      <http://www.w3.org/ns/prov#> .
+
+# About
+
+<https://w3id.org/city_of_things>
+        a                              foaf:Document ;
+        foaf:primaryTopic cot:         .
+
+cot:    a                              owl:Ontology ;
+        cc:license                     <https://creativecommons.org/licenses/by/4.0/> ;
+        rdfs:label                     "City of Things Vocabulary"@en ;
+        vann:preferredNamespacePrefix  "cot" ;
+        vann:preferredNamespaceUri     <https://w3id.org/city_of_things#> ;
+        dct:creator                    <http://hdelva.be/> ;
+        dct:creator                    <https://pietercolpaert.be/#me> ;
+        dct:issued                     "2019-08-22"^^xsd:date ;
+        dct:modified                   "2019-08-22"^^xsd:date .
+
+
+# features of interest
+
+cot:AirQuality
+        a                     sosa:FeatureOfInterest ;
+        skos:exactMatch       m3-lite:AirQuality ;
+        rdfs:label            "Air Quality"@en ;
+        rdfs:comments         "The degree to which the air in a particular place is pollution-free."@en ;
+        prov:wasInfluencedBy  <https://www.lexico.com/en/definition/air_quality> ;
+        rdfs:isDefinedBy      cot: .
+
+cot:Weather        
+        a                     sosa:FeatureOfInterest ;
+        skos:exactMatch       m3-lite:Weather ;
+        rdfs:label            "Weather"@en ;
+        rdfs:comments         "The state of the atmosphere at a particular place and time as regards heat, cloudiness, dryness, sunshine, wind, rain, etc."@en ;
+        prov:wasInfluencedBy  <https://www.lexico.com/en/definition/weather> ;
+        rdfs:isDefinedBy      cot: .
+
+cot:SolarRadiation
+        a                     sosa:FeatureOfInterest ;
+        skos:exactMatch       m3-lite:SolarRadiation ;
+        rdfs:label            "Solar Radiation"@en ;
+        rdfs:comments         "Radiant energy emitted by the sun from a nuclear fusion reaction that creates electromagnetic energy."@en ;
+        prov:wasInfluencedBy  <https://www.ambientweather.com/solarradiation.html> ;
+        rdfs:isDefinedBy      cot: .
+
+
+# observable properties
+
+cot:NO 
+        a                   sosa:ObservableProperty ;
+        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationNO ;
+        rdfs:isDefinedBy    cot: .
+
+cot:NO2 
+        a                   sosa:ObservableProperty ;
+        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationNO2 ;
+        rdfs:isDefinedBy    cot: .
+
+cot:O3 
+        a                   sosa:ObservableProperty ;
+        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationO3 ;
+        rdfs:isDefinedBy    cot: .
+
+cot:PM10 
+        a                   sosa:ObservableProperty ;
+        skos:narrowMatch    m3-lite:ChemicalAgentAtmosphericConcentrationDust ;
+        rdfs:isDefinedBy    cot: .
+
+cot:PM1
+        a                   sosa:ObservableProperty ;
+        skos:narrowMatch    m3-lite:ChemicalAgentAtmosphericConcentrationDust ;
+        rdfs:isDefinedBy    cot: .
+
+cot:PM25 
+        a                   sosa:ObservableProperty ;
+        skos:narrowMatch    m3-lite:ChemicalAgentAtmosphericConcentrationDust ;
+        rdfs:isDefinedBy    cot: .
+
+cot:VOC 
+        a                   sosa:ObservableProperty ;
+        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationVOC ;
+        rdfs:isDefinedBy    cot: .
+
+cot:NH3 
+        a                   sosa:ObservableProperty ;
+        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationNH3 ;
+        rdfs:isDefinedBy    cot: .
+
+cot:CO 
+        a                   sosa:ObservableProperty ;
+        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationCO ;
+        rdfs:isDefinedBy    cot: .
+
+cot:SO2
+        a                   sosa:ObservableProperty ;
+        skos:exactMatch     m3-lite:ChemicalAgentAtmosphericConcentrationSO2 ;
+        rdfs:isDefinedBy    cot: .
+
+cot:Light
+        a                   sosa:ObservableProperty ;
+        skos:relatedMatch   m3-lite:Illuminance ;
+        rdfs:isDefinedBy    cot: .
+
+cot:RelativeHumidity
+        a                   sosa:ObservableProperty ;
+        skos:exactMatch     m3-lite:RelativeHumidity ;
+        rdfs:isDefinedBy    cot: .
+
+cot:Temperature
+        a                   sosa:ObservableProperty ;
+        skos:exactMatch     m3-lite:Temperature ;
+        rdfs:isDefinedBy    cot: .
