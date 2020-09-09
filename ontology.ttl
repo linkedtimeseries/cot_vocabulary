@@ -58,6 +58,8 @@ cot:SolarRadiation
 
 # observable properties
 
+## Environmental
+
 cot:NO 
         a                     sosa:ObservableProperty ;
         skos:exactMatch       m3-lite:ChemicalAgentAtmosphericConcentrationNO ;
@@ -160,6 +162,38 @@ cot:Temperature
         rdfs:label            "Temperature"@en ;
         rdfs:comment          "The degree or intensity of heat present in a substance or object, especially as expressed according to a comparative scale and shown by a thermometer or perceived by touch."@en ;
         prov:wasInfluencedBy  <https://www.lexico.com/en/definition/temperature> ;
+        rdfs:isDefinedBy      cot: .
+
+## Mobility
+
+cot:passedByVehiclesCount
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "passed by vehicles count"@en ;
+        rdfs:comment          "The number of vehicles that are counted at a certain location, e.g. where a camera is observing."@en ;
+        rdfs:isDefinedBy      cot: .
+
+cot:passedByTransitVehiclesCount
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "passed by transit vehicles count"@en ;
+        rdfs:comment          "The number of vehicles that are transitting through a certain area, e.g. the center of the city."@en ;
+        rdfs:isDefinedBy      cot: .
+
+cot:passedByUniqueVehiclesCount
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "passed by vehicles count"@en ;
+        rdfs:comment          "The number of unique vehicles that are counted at a certain location, e.g. the location of a camera, or area."@en ;
+        rdfs:isDefinedBy      cot: .
+
+cot:passedByVehiclesInFlowCount
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "passed by vehicles count"@en ;
+        rdfs:comment          "The number of vehicles that are counted between an origin and destination location, e.g. between two cameras."@en ;
+        rdfs:isDefinedBy      cot: .
+
+cot:passedByVehiclesPerMinuteInFlowCount
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "passed by vehicles count"@en ;
+        rdfs:comment          "The number of vehicles that needed a certain number of minutes to get from one location (origin) to another (destination)."@en ;
         rdfs:isDefinedBy      cot: .
 
 # Aggregations
