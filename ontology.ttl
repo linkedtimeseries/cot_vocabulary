@@ -9,12 +9,12 @@
 @prefix sosa:      <http://www.w3.org/ns/sosa/> .
 @prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
 @prefix m3-lite:   <http://purl.org/iot/vocab/m3-lite#> .
-@prefix cot:       <https://w3id.org/city_of_things#> .
+@prefix cot:       <https://w3id.org/cityofthings#> .
 @prefix prov:      <http://www.w3.org/ns/prov#> .
 
 # About
 
-<https://w3id.org/city_of_things>
+<https://w3id.org/cityofthings>
         a                              foaf:Document ;
         foaf:primaryTopic cot:         .
 
@@ -22,11 +22,11 @@ cot:    a                              owl:Ontology ;
         cc:license                     <https://creativecommons.org/licenses/by/4.0/> ;
         rdfs:label                     "City of Things Vocabulary"@en ;
         vann:preferredNamespacePrefix  "cot" ;
-        vann:preferredNamespaceUri     <https://w3id.org/city_of_things#> ;
+        vann:preferredNamespaceUri     <https://w3id.org/cityofthings#> ;
         dct:creator                    <http://hdelva.be/#me> ;
         dct:creator                    <https://pietercolpaert.be/#me> ;
         dct:issued                     "2019-08-22"^^xsd:date ;
-        dct:modified                   "2019-08-22"^^xsd:date .
+        dct:modified                   "2020-09-09"^^xsd:date .
 
 
 # features of interest
@@ -256,7 +256,7 @@ cot:inArea
 cot:usingFunction
         a                     rdf:Property ;
         rdfs:label            "usingFunction"@en ;
-        rdfs:comment          "The area that's being aggregated."@en ;
+        rdfs:comment          "The function that is used for aggregating."@en ;
         rdfs:domain           cot:Aggregation ;
         rdfs:range            cot:AggregationFunction ;
         rdfs:isDefinedBy      cot: .
