@@ -11,6 +11,7 @@
 @prefix m3-lite:   <http://purl.org/iot/vocab/m3-lite#> .
 @prefix cot:       <https://w3id.org/cityofthings#> .
 @prefix prov:      <http://www.w3.org/ns/prov#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
 
 # About
 
@@ -165,6 +166,41 @@ cot:Temperature
         rdfs:isDefinedBy      cot: .
 
 ## Mobility
+
+cot:Flow
+        a                     rdfs:Class ;
+        rdfs:label            "Flow"@en ;
+        rdfs:comment          "Collection of entities that are moving."@en ;
+        rdfs:isDefinedBy      cot: .
+
+cot:contains
+        a                      rdf:Property ;
+        rdfs:label            "contains"@en ;
+        rdfs:comment          "Ordered list of entities where a flow is moving."@en ;
+        rdfs:domain           cot:Flow ;
+        rdfs:range            rdf:List ;
+        rdfs:isDefinedBy      cot: .
+
+cot:AggregatedFlowCount
+        rdfs:subClassOf       sosa:ObservableProperty ;
+        rdfs:label            "Aggregated flow count"@en ;
+        rdfs:comment          "Number of resources that are counted, aggregated by certain dimensions."@en ;
+        rdfs:isDefinedBy      cot: .
+
+cot:numberOfSeconds
+        a                      rdf:Property ;
+        rdfs:label            "number of seconds"@en ;
+        rdfs:comment          "Number of seconds that an AggregatedFlowCount has aggregated over."@en ;
+        rdfs:domain           cot:AggregatedFlowCount ;
+        rdfs:range            xsd:string ;
+        rdfs:isDefinedBy      cot: .
+
+cot:meansOfTransport
+        a                      rdf:Property ;
+        rdfs:label            "Means of transport"@en ;
+        rdfs:comment          "Means of transport that an AggregatedFlowCount has aggregated over."@en ;
+        rdfs:domain           cot:AggregatedFlowCount ;
+        rdfs:isDefinedBy      cot: .
 
 cot:passedByVehiclesCount
         a                     sosa:ObservableProperty ;
